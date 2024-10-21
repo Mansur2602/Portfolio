@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+
+{% load static %}
+
+{% block title%}Портфолио{%endblock title%}
+
+
+{% block content%}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="{% static 'image/image.png' %}" class="rounded-circle" alt="Profile" width="150">
+        </div>
+        <div class="col-md-8">
+            <h1>Мое портфолио</h1>
+            <p class="lead">Я много что делал...</p>
+            <p>Я учусь в 11 классе, имею черный пояс по каратэ, неплохо знаю английский, имею 1 разряд по шахматам</p>
+        </div>
+    </div>
+</div>
+{%endblock content%}
